@@ -1,0 +1,167 @@
+
+@font-face { font-family: figtree-light; 
+    src: url('./Fonts/Figtree-Light.ttf'); 
+} 
+@font-face { font-family: figtree-regular; 
+    src: url('./Fonts/Figtree-Regular.ttf'); 
+} 
+
+
+body {
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    /* background-color: antiquewhite; */
+}
+
+.main-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: antiquewhite; */
+    
+} 
+
+
+.section-title{
+    text-align: center;
+    border-bottom: 1.2px #dedede solid;
+    font-family: 'figtree-light';
+    font-size: 24px;
+    letter-spacing: normal;
+    color: #444444e9;
+}
+
+.show-more{
+    background-color: #85c224;
+    display: inline-block;
+    color: azure;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'figtree-regular';
+
+}
+/* CATEGORY CARDS SECTION */
+.category-cards-container{
+    display: flex;
+    /* background-color: antiquewhite; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.category-cards-item1,
+.category-cards-item2,
+.category-cards-item3,
+.category-cards-item4,
+.category-cards-item5,
+.category-cards-item6{
+    /* flex-shrink: 400px; */
+    flex-basis: 10%;
+    
+}
+
+/* DIWALI BANNER SECTION */
+
+.banner-container{
+    /* background-color: antiquewhite; */
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* BANK OFFERS SECTION */
+
+.bank-offers-container {
+    /* margin-left:20px;
+    margin-right: 50px; */
+    margin-left: 3%;
+    margin-right: 3%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bank-offer-1,
+.bank-offer-2,
+.bank-offer-3,
+.bank-offer-4 {
+    flex-basis: 10%;
+
+}
+
+/* BEST SELLERS SECTION */
+
+/* TOP OFFERS SECTION */
+.top-offers-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.top-offers-item1,
+.top-offers-item2,
+.top-offers-item3,
+.top-offers-item4{
+    flex-basis: 10%;
+}
+
+/* FRUITS AND VEGETABLES SECTION */
+.fruits-and-vegetables-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* YOUR DAILY STAPLES SECTION */
+.your-daily-staples-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* BEVERAGES SECTION */
+.beverages-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* background-color: antiquewhite; */
+}
+
+.beverages-inner-container{
+    /* flex: 50%; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* background-color: antiquewhite; */
+    /* flex-direction: row; */
+}
+
+/* .beverages-item1{
+    flex: 3;
+    
+}
+
+.beverages-item2,
+.beverages-item3,
+.beverages-item4{
+    flex: 1;
+    
+} */
+
+/* SNACKS STORE SECTION */
+.snacks-store-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* CLEANING AND HOUSEHOLD SECTION */
+.cleaning-and-household-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

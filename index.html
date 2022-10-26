@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      PubBasket : Online Grocery Shopping and Online Supermarket in India
+    </title>
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Figtree"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-section">
+      <!-- CATEGORY CARDS SECTION -->
+      <section class="category-cards">
+        <div class="category-cards-container">
+          <div class="category-cards-item1">
+            <a
+              href="https://www.bigbasket.com/cl/eggs-meat-fish/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_01png&t_from_ban=5521524&t_pos=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_01.png"
+                alt="Category : Eggs, Meat and Fish"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+
+          <div class="category-cards-item2">
+            <a
+              href="https://neu.in/7Si5iLMaNob/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_02png&t_from_ban=5521558&t_pos=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_02.png"
+                alt="Category : Tata NeuPass Benfit"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+
+          <div class="category-cards-item3">
+            <a
+              href="https://www.bigbasket.com/sp/2208029-the-ayurveda-store/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_03png&t_from_ban=5521592&t_pos=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_03.png"
+                alt="Category : Ayurveda"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+
+          <div class="category-cards-item4">
+            <a
+              href="https://www.bigbasket.com/sp/2208049-buy-more-save-more/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_04png&t_from_ban=5521626&t_pos=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_04.png"
+                alt="Category : Buy More Save"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+
+          <div class="category-cards-item5">
+            <a
+              href="https://www.bigbasket.com/sp/2207580-deals-of-the-week/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_05png&t_from_ban=5521660&t_pos=5&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_05.png"
+                alt="Category : Deals of the Week"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+
+          <div class="category-cards-item6">
+            <a
+              href="https://www.bigbasket.com/sp/2208061-combos/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_251022_06png&t_from_ban=5521694&t_pos=6&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_06.png"
+                alt="Category : Combo Store"
+                width="140px"
+                height="50px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SMART BASKET SECTION -->
+      <section class="my-smart-basket">
+        <div class="my-smart-basket-title">
+          <h3 class="section-title">My Smart Basket</h3>
+          <div class="show-more">Show More</div>
+        </div>
+      </section>
+
+      <!-- DIWALI BANNER SECTION -->
+      <section class="diwali-banner">
+        <div class="banner-container">
+          <div class="banner-item">
+            <a
+              href="https://www.bigbasket.com/diwali-sale/?nc=b-cp&b_t=cp&b_camp=hp_cc_m_diwali-sale_1130x400_101022-1&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Top%20TVC&t_pos_sec=3&t_ch=desktop&t_pos=1&t_from_ban=5438030"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/uploads/banner_images/hp_cc_m_diwali-sale_1130x400_101022-1.jpg"
+                alt="Big Diwali Utsav Advertisement Banner : Upto to 60% off"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANK OFFERS SECTION -->
+      <section class="bank-offers">
+        <div class="bank-offers-title">
+          <h3 class="section-title">Bank Offers</h3>
+        </div>
+        <div class="bank-offers-container">
+          <div class="bank-offer-1">
+            <a
+              href="https://www.bigbasket.com/paytm/?nc=Bank%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Bank%20Offers&t_pos_sec=4&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/2a46997a-8de3-47ba-af2d-25e7613f233d/t1_hp_aff_m_paytm_360_160922.jpg"
+                alt=" Bank Offer 1: Use Paytm to get upto 500 cashback."
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="bank-offer-2">
+            <a
+              href="https://www.bigbasket.com/yesbank/?nc=Bank%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Bank%20Offers&t_pos_sec=4&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/2a46997a-8de3-47ba-af2d-25e7613f233d/t1_hp_aff_m_yes_360_100922.jpg"
+                alt=" Bank Offer 2 : Use Yes Bank to get upto 200 cashback on minimum spend 2000. CODE : YESSEP22"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="bank-offer-3">
+            <a
+              href="https://www.bigbasket.com/rbl/?nc=Bank%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Bank%20Offers&t_pos_sec=4&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/2a46997a-8de3-47ba-af2d-25e7613f233d/t1_hp_aff_m_rbl_360_100922.jpg"
+                alt=" Bank Offer 3 : Use RBL Bank to get 200 instant discount on minimum spend 2500. CODE : RBLSEP22"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="bank-offer-4">
+            <a
+              href="https://www.bigbasket.com/digi-bank-89658/?nc=Bank%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Bank%20Offers&t_pos_sec=4&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/2a46997a-8de3-47ba-af2d-25e7613f233d/t1_hp_m_aff_dbs_360_100922.jpg"
+                alt=" Bank Offer 4 : Use DBS to get 10% instant discount upto 400 on minimum spend 1000. CODE : DBSSEP22"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEST SELLERS SECTION -->
+      <section class="best-sellers">
+        <div class="best-sellers-title">
+          <h3 class="section-title">Best Sellers</h3>
+          <div class="show-more">Show More</div>
+        </div>
+      </section>
+
+      <!-- TOP OFFERS SECTION -->
+      <section class="top-offers">
+        <div class="top-offers-title">
+          <h3 class="section-title">Top Offers</h3>
+        </div>
+        <div class="top-offers-container">
+          <div class="top-offers-item1">
+            <a
+              href="https://www.bigbasket.com/sp/2210779-deals-of-the-week/?nc=Top%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Top%20Offers&t_pos_sec=6&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_dow-topoffersStorefront_m_480_251022_01.jpg"
+                alt="Offers: Deals of the Week"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="top-offers-item2">
+            <a
+              href="https://www.bigbasket.com/sp/2211008-big-pack-biger/?nc=Top%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Top%20Offers&t_pos_sec=6&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_big-pack-topoffersStorefront_m_480_251022_02.jpg"
+                alt="Offers: Big Pack,Bigger Discount"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="top-offers-item3">
+            <a
+              href="https://www.bigbasket.com/sp/2211009-combos/?nc=Top%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Top%20Offers&t_pos_sec=6&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_combos-topoffersStorefront_m_480_251022_03.jpg"
+                alt="Offers: Combos You Can't Miss"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="top-offers-item4">
+            <a
+              href="https://www.bigbasket.com/sp/2211010-the-30-corner/?nc=Top%20Offers&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Top%20Offers&t_pos_sec=6&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_30-corner-topoffersStorefront_m_480_251022_04.jpg"
+                alt="Offers: The Rs.30 Corner"
+                width="240px"
+                height="180px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FRUITS AND VEGETABLES SECTION -->
+      <section class="fruits-and-vegetables">
+        <div class="fruits-and-vegetables-title">
+          <h3 class="section-title">Fruits and Vegetables</h3>
+        </div>
+        <div class="fruits-and-vegetables-container">
+          <div class="fruits-and-vegetables-item1">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/organic-fruits-vegetables/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_organic-fnv_Storefront_m_251022_01.jpg"
+                alt="Organic Friuts and Vegetables"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="fruits-and-vegetables-item2">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_fresh-fruits-fnv_Storefront_m_251022_02.jpg"
+                alt="Fresh Fruits"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="fruits-and-vegetables-item3">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_fresh-veggs-fnv_Storefront_m_251022_03.jpg"
+                alt="Fresh Vegetables"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="fruits-and-vegetables-item4">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/cuts-sprouts/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_cutx-sprouts-fnv_Storefront_m_251022_04.jpg"
+                alt="Cuts and Sprouts"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="fruits-and-vegetables-item5">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/exotic-fruits-veggies/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=5&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_exotic-fnv_Storefront_m_251022_05.jpg"
+                alt="Exotic Friuts and Vegetables"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="fruits-and-vegetables-item6">
+            <a
+              href="https://www.bigbasket.com/pc/fruits-vegetables/herbs-seasonings/?nc=Fruits%20&%20Vegetables&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Fruits%20&%20Vegetables&t_pos_sec=7&t_pos_item=6&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_herbs-seasoning-fnv_m_251022_06.jpg"
+                alt="Herbs and Seasonings"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- YOUR DAILY STAPLES SECTION -->
+      <section class="your-daily-staples">
+        <div class="your-daily-staples-title">
+          <h3 class="section-title">Your Daily Staples</h3>
+        </div>
+        <div class="your-daily-staples-container">
+          <div class="your-daily-staples-item1">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/atta-flours-sooji/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_atta-flour-staplesStorefront_m_480_251022_01.jpg"
+                alt="Atta and Flour"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="your-daily-staples-item2">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/rice-rice-products/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_rice-staplesStorefront_m_480_251022_02.jpg"
+                alt="Rice and Rice Products"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="your-daily-staples-item3">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/dals-pulses/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_dals-pulses-staplesStorefront_m_480_251022_03.jpg"
+                alt="Dals and Pulses"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="your-daily-staples-item4">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/edible-oils-ghee/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_cooking-oil-staplesStorefront_m_480_251022_04.jpg"
+                alt="Cooking Oils and Ghee"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="your-daily-staples-item5">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/dry-fruits/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=5&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_dry-fruits-staplesStorefront_m_480_251022_05.jpg"
+                alt="Dry Friuts"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+
+          <div class="your-daily-staples-item6">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/salt-sugar-jaggery/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=6&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_salt-sugar-staplesStorefront_m_480_251022_06.jpg"
+                alt="Salt, Sugar and Jaggery"
+                width="170px"
+                height="120px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEVERAGES SECTION -->
+      <section class="beverages">
+        <div class="beverages-title">
+          <h3 class="section-title">Beverages</h3>
+        </div>
+        <div class="beverages-container">
+          <div class="beverages-item1">
+            <a
+              href="https://www.bigbasket.com/sp/2211016-hot-drinks/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_hot-sips-beveragesStorefront_m_251022_560x378_01.jpg"
+                alt="Hot Sips"
+                width="590px"
+                height="420px"
+              />
+            </a>
+          </div>
+
+          <div class="beverages--inner-container">
+          <div class="beverages-item2">
+            <a
+              href="https://www.bigbasket.com/sp/2211017-boost-metabolism/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coost-beveragesStorefront_m_251022_275x184_02.jpg"
+                alt="Boost Metabolism"
+                width="220px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="beverages-item3">
+            <a
+              href="https://www.bigbasket.com/sp/2211018-coffee/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coffee-beveragesStorefront_m_251022_275x184_03.jpg"
+                alt="Kings of Caffeine"
+                width="220px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="beverages-item4">
+            <a
+              href="https://www.bigbasket.com/sp/2209029-health-drink/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_health-beveragesStorefront_m_251022_275x184_04.jpg"
+                alt="Health drink Supplements"
+                width="220px"
+                height="180px"
+              />
+            </a>
+          </div>
+
+          <div class="beverages-item5">
+            <a
+              href="https://www.bigbasket.com/sp/2209027-energy-drinks/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=5&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_energy-beveragesStorefront_m_251022_275x184_05.jpg"
+                alt="Energy Drinks"
+                width="220px"
+                height="180px"
+              />
+            </a>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- SNACKS STORE SECTION -->
+      <section class="snacks-store">
+        <div class="snacks-store-title">
+          <h3 class="section-title">Snacks Store</h3>
+        </div>
+        <div class="snacks-store-container">
+          <div class="snacks-store-item1">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/atta-flours-sooji/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_namkeens-snacksStorefront_m_480_251022_01.jpg"
+                alt="Namkeen, Chips and Nachos"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="snacks-store-item2">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/rice-rice-products/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_frozen-snacks-snacksStorefront_m_480_251022_02.jpg"
+                alt="Frozen snacks"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="snacks-store-item3">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/dals-pulses/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_soups-noodles-snacksStorefront_m_480_251022_03.jpg"
+                alt="Soups, Noodles and Pasta"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="snacks-store-item4">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/edible-oils-ghee/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_ready-cook-snacksStorefront_m_480_251022_04.jpg"
+                alt="Ready to Cook"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="snacks-store-item5">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/dry-fruits/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=5&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_biscuit-cookies-snacksStorefront_m_480_251022_05.jpg"
+                alt="Biscuits and Cookies"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="snacks-store-item6">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/salt-sugar-jaggery/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=6&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_chocolates-snacksStorefront_m_480_251022_06-13.jpg"
+                alt="Chocolates and Sweets"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLEANING AND HOUSEHOLD SECTION -->
+      <section class="cleaning-and-household">
+        <div class="cleaning-and-household-title">
+          <h3 class="section-title">Snacks Store</h3>
+        </div>
+        <div class="cleaning-and-household-container">
+          <div class="cleaning-and-household-item1">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/atta-flours-sooji/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=1&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_cleaners-disnfectants_m_480_251022_01.jpg"
+                alt="Cleaners and Disinfectant"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="cleaning-and-household-item2">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/rice-rice-products/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=2&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_detetgents-cleaningStorefront_m_480_251022_02.jpg"
+                alt="Detergents and Fabric Care"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="cleaning-and-household-item3">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/dals-pulses/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=3&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_kitchen-wipes-m_480_251022_03.jpg"
+                alt="Kitchen Wipes and Utensil scrubs"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+          <div class="cleaning-and-household-item4">
+            <a
+              href="https://www.bigbasket.com/pc/foodgrains-oil-masala/edible-oils-ghee/?nc=Your%20Daily%20Staples&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Your%20Daily%20Staples&t_pos_sec=8&t_pos_item=4&t_ch=desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_fresheners-repplent-_m_480_251022_04.jpg"
+                alt="Freshners and Repellents"
+                width="280px"
+                height="220px"
+              />
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      
+    </main>
+  </body>
+</html>
