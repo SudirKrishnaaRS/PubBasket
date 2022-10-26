@@ -180,3 +180,10 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+/* BRANDS STORE */
+.brand-store-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
