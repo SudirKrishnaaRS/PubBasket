@@ -173,3 +173,10 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+/* HOME AND KITCHEN ESSENTIALS SECTION */
+.home-and-kitchen-essentials-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
