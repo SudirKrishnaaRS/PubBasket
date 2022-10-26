@@ -133,6 +133,7 @@ body {
 }
 
 .beverages-inner-container{
+    /* display: flex; */
     /* flex: 50%; */
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
@@ -164,4 +165,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+/* BEAUTY AND HYGEINE SECTION */
+.beauty-and-hygeine-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
