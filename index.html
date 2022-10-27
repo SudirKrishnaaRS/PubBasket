@@ -17,9 +17,51 @@
       href="https://fonts.googleapis.com/css?family=Figtree"
     />
 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+      integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <section class="location-login-header">
+        <div class="location-login-header-container">
+          <div class="location-login-header-item1">
+            <div class="location-login-header-detail">
+              <h3><i class="fa-duotone fa-phone"></i> 1860 123 1000</h3>
+            </div>
+          </div>
+
+          <div class="location-login-header-item2">
+            <div class="location-login-header-detail">
+              <h3><i class="fa-duotone fa-phone"></i> 560004,Bangalore</h3>
+            </div>
+          </div>
+
+          <div class="location-login-header-item3">
+            <div class="location-login-header-detail">
+              <h3><i class="fa-duotone fa-phone"></i> Login/Sign Up</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
     <main class="main-section">
       <!-- CATEGORY CARDS SECTION -->
       <section class="category-cards">
@@ -119,8 +161,256 @@
       <!-- SMART BASKET SECTION -->
       <section class="my-smart-basket">
         <div class="my-smart-basket-title">
-          <h3 class="section-title">My Smart Basket</h3>
-          <div class="show-more">Show More</div>
+          <h3 class="section-title">
+            My Smart Basket
+            <div class="show-more">Show More</div>
+          </h3>
+        </div>
+        <div class="my-smart-basket-container">
+          <div class="my-smart-basket-card1">
+            <div class="card">
+              <table>
+                <tr>
+                  <div class="card-offer">
+                    <p>Get 66% OFF</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-image">
+                    <img
+                      src="https://www.bigbasket.com/media/uploads/p/s/10000097_19-fresho-coriander-leaves.jpg"
+                      alt="Card Product Image: Corriander leaves"
+                      width="150px"
+                      height="150px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="veg-nonveg-symbol">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="food category : veg / nonveg"
+                      width="35px"
+                      height="35px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-vendor-name">
+                    <p>Fresho</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-product-name">Coriander Leaves</div>
+                </tr>
+                <tr>
+                  <select name="card-weight" id="">
+                    <option value="100 g - Rs 8.50">100 g - Rs 8.50</option>
+                    <option value="250 g - Rs 19.50">250 g - Rs 19.50</option>
+                  </select>
+                </tr>
+
+                <tr class="card-footer">
+                  <div class="rate">
+                    <span class="mrp-title">MRP: </span>
+                    <span class="mrp">Rs.20.36</span>
+                    <span class="final-price">Rs.8.50</span>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="delivery-eta">
+                    Standard Delivery: Tommorow <br />
+                    3:00PM-7:00PM
+                  </div>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="quantity-container">
+                      <div class="quantity-container-item1">
+                        <div class="quantity-title">
+                          <label for="qty">Qty</label>
+                        </div>
+                      </div>
+                      <div class="quantity-container-item2">
+                        <div class="quantity-input" >
+                          <input type="number" id="qty" value="1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="add-button" >
+                        Add <i class="fa-duotone fa-phone"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="my-smart-basket-card2">
+            <div class="card">
+              <table>
+                <tr>
+                  <div class="card-offer">
+                    <p>Get 24% OFF</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-image">
+                    <img
+                      src="https://www.bigbasket.com/media/uploads/p/s/10000102_17-fresho-cucumber.jpg"
+                      alt="Card Product Image: Cucumber (Loose)"
+                      width="150px"
+                      height="150px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="veg-nonveg-symbol">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="food category : veg / nonveg"
+                      width="35px"
+                      height="35px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-vendor-name">
+                    <p>Fresho</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-product-name">Cucumber (Loose)</div>
+                </tr>
+                <tr>
+                  <select name="card-weight" id="">
+                    <option value="1 kg - Rs 28.50">1 kg - Rs 28.50</option>
+                    <option value="500 g - Rs 14.50">500 g - Rs 14.50</option>
+                  </select>
+                </tr>
+
+                <tr class="card-footer">
+                  <div class="rate">
+                    <span class="mrp-title">MRP: </span>
+                    <span class="mrp">Rs.37.26</span>
+                    <span class="final-price">Rs.28.40</span>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="delivery-eta">
+                    Standard Delivery: Tommorow <br />
+                    3:00PM-7:00PM
+                  </div>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="quantity-container">
+                      <div class="quantity-container-item1">
+                        <div class="quantity-title">
+                          <label for="qty">Qty</label>
+                        </div>
+                      </div>
+                      <div class="quantity-container-item2">
+                        <div class="quantity-input">
+                          <input type="number" id="qty" value="1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="add-button">
+                        Add <i class="fa-duotone fa-phone"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="my-smart-basket-card3">
+            <div class="card">
+              <table>
+                <tr>
+                  <div class="card-offer">
+                    <p>Get 24% OFF</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-image">
+                    <img
+                      src="https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg"
+                      alt="Card Product Image: Ladies' Fingers (Loose)"
+                      width="150px"
+                      height="150px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="veg-nonveg-symbol">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="food category : veg"
+                      width="35px"
+                      height="35px"
+                    />
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-vendor-name">
+                    <p>Fresho</p>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="card-product-name">Ladies' Fingers  (Loose)</div>
+                </tr>
+                <tr>
+                  <select name="card-weight" id="">
+                    <option value="1 kg - Rs 28.50">1 kg - Rs 28.50</option>
+                    <option value="500 g - Rs 14.50">500 g - Rs 14.50</option>
+                  </select>
+                </tr>
+
+                <tr class="card-footer">
+                  <div class="rate">
+                    <span class="mrp-title">MRP: </span>
+                    <span class="mrp">Rs.37.26</span>
+                    <span class="final-price">Rs.28.40</span>
+                  </div>
+                </tr>
+                <tr>
+                  <div class="delivery-eta">
+                    Standard Delivery: Tommorow <br />
+                    3:00PM-7:00PM
+                  </div>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="quantity-container">
+                      <div class="quantity-container-item1">
+                        <div class="quantity-title">
+                          <label for="qty">Qty</label>
+                        </div>
+                      </div>
+                      <div class="quantity-container-item2">
+                        <div class="quantity-input">
+                          <input type="number" id="qty" value="1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="add-button">
+                        Add <i class="fa-duotone fa-phone"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
         </div>
       </section>
 
@@ -504,66 +794,66 @@
           </div>
 
           <div class="beverages-inner-container">
-          <div class="beverages-item2">
-            <a
-              href="https://www.bigbasket.com/sp/2211017-boost-metabolism/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=2&t_ch=desktop"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coost-beveragesStorefront_m_251022_275x184_02.jpg"
-                alt="Boost Metabolism"
-                width="220px"
-                height="180px"
-              />
-            </a>
-          </div>
+            <div class="beverages-item2">
+              <a
+                href="https://www.bigbasket.com/sp/2211017-boost-metabolism/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=2&t_ch=desktop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coost-beveragesStorefront_m_251022_275x184_02.jpg"
+                  alt="Boost Metabolism"
+                  width="220px"
+                  height="180px"
+                />
+              </a>
+            </div>
 
-          <div class="beverages-item3">
-            <a
-              href="https://www.bigbasket.com/sp/2211018-coffee/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=4&t_ch=desktop"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coffee-beveragesStorefront_m_251022_275x184_03.jpg"
-                alt="Kings of Caffeine"
-                width="220px"
-                height="180px"
-              />
-            </a>
-          </div>
+            <div class="beverages-item3">
+              <a
+                href="https://www.bigbasket.com/sp/2211018-coffee/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=4&t_ch=desktop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coffee-beveragesStorefront_m_251022_275x184_03.jpg"
+                  alt="Kings of Caffeine"
+                  width="220px"
+                  height="180px"
+                />
+              </a>
+            </div>
 
-          <div class="beverages-item4">
-            <a
-              href="https://www.bigbasket.com/sp/2209029-health-drink/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=3&t_ch=desktop"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_health-beveragesStorefront_m_251022_275x184_04.jpg"
-                alt="Health drink Supplements"
-                width="220px"
-                height="180px"
-              />
-            </a>
-          </div>
+            <div class="beverages-item4">
+              <a
+                href="https://www.bigbasket.com/sp/2209029-health-drink/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=3&t_ch=desktop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_health-beveragesStorefront_m_251022_275x184_04.jpg"
+                  alt="Health drink Supplements"
+                  width="220px"
+                  height="180px"
+                />
+              </a>
+            </div>
 
-          <div class="beverages-item5">
-            <a
-              href="https://www.bigbasket.com/sp/2209027-energy-drinks/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=5&t_ch=desktop"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_energy-beveragesStorefront_m_251022_275x184_05.jpg"
-                alt="Energy Drinks"
-                width="220px"
-                height="180px"
-              />
-            </a>
+            <div class="beverages-item5">
+              <a
+                href="https://www.bigbasket.com/sp/2209027-energy-drinks/?nc=Beverages&t_pg=/nov-t1-home-page/&t_p=nov-t1-2022&t_s=Beverages&t_pos_sec=9&t_pos_item=5&t_ch=desktop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_energy-beveragesStorefront_m_251022_275x184_05.jpg"
+                  alt="Energy Drinks"
+                  width="220px"
+                  height="180px"
+                />
+              </a>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -730,7 +1020,6 @@
               />
             </a>
           </div>
-
         </div>
       </section>
 
@@ -815,7 +1104,7 @@
               />
             </a>
           </div>
-        <!-- </div> -->
+          <!-- </div> -->
         </div>
       </section>
 
@@ -1018,8 +1307,8 @@
       <!-- FEATURED RECEIPES BANNER SECTION -->
       <section class="featured-receipes-banner">
         <div class="featured-receipes-title">
-            <h3 class="section-title">Features Receipes</h3>
-          </div>
+          <h3 class="section-title">Features Receipes</h3>
+        </div>
         <div class="banner-container">
           <div class="banner-item">
             <a
@@ -1035,7 +1324,6 @@
           </div>
         </div>
       </section>
-
     </main>
   </body>
 </html>

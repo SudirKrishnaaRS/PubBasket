@@ -5,7 +5,36 @@
 @font-face { font-family: figtree-regular; 
     src: url('./Fonts/Figtree-Regular.ttf'); 
 } 
+@font-face { font-family: figtree-black; 
+    src: url('./Fonts/Figtree-Black.ttf'); 
+} 
+@font-face { font-family: figtree-bold; 
+    src: url('./Fonts/Figtree-Bold.ttf'); 
+} 
 
+/* HEADER SECTION */
+header{
+    /* background-color: #85c224; */
+    margin-top: 0px;
+}
+
+.location-login-header-container{
+    display: flex;
+    justify-content: end;
+    /* background-color: antiquewhite; */
+}
+
+.location-login-header-detail{
+    font-family: 'figtree-light';
+    color: #666666;
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.location-login-header-detail:hover{
+    color: #85CC22;
+}
 
 body {
     /* margin-left: 5%;
@@ -28,6 +57,7 @@ body {
     font-size: 24px;
     letter-spacing: normal;
     color: #444444e9;
+    /* margin-right: 100px; */
 }
 
 .show-more{
@@ -38,14 +68,137 @@ body {
     border-radius: 5px;
     font-size: 14px;
     font-family: 'figtree-regular';
+    /* margin-left: a; */
+    /* position: absolute;
+    top: 0; */
+    /* bottom: 0; */
+    /* display: inline-flex; */
+    /* margin:auto; */
+   
 
 }
+
+/* MY SMART BASKET SECTION */
+.my-smart-basket-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my-smart-basket-card1{
+
+}
+
+.card{
+    /* background-color: #666666; */
+    border: 1px #6666666c solid;
+    padding: 15px;
+    margin: 2px;
+    
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-offer{
+    font-family: 'figtree-regular';
+    font-weight: 700;
+    color: #ba5253;
+    font-size: 10px;
+    text-align: end;
+    background-color: #ffffff95;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0.2px;
+    padding-bottom: 0.1px;
+    /* padding: 2px 8px; */
+    /* border: 1px #6666666c solid; */
+    box-shadow: 1px 2px 26px -3px rgba(214,214,214,0.56);
+    
+
+}
+
+.mrp-title{
+    color: #666666;
+    font-size: 11px;
+    font-family: 'figtree-regular';
+    font-weight: 800;
+}
+
+.mrp{
+    text-decoration: line-through;
+    color: #6E6E71;
+    font-size: 10px;
+}
+
+.final-price{
+    color: #231F20;
+    font-size: 14px;
+    font-family: 'figtree-bold'; 
+}
+
+.delivery-eta{
+    color: #333333;
+    font-size: 10px;
+    font-family: 'figtree-regular';
+    font-weight: 400;
+}
+
+/* .card-footer tr{
+    color: #161513;
+} */
+
+.card-vendor-name{
+    color: #999999;
+    font-size: 11px;
+    font-family: 'figtree-regular';
+}
+
+.card-product-name{
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: 'figtree-regular';
+    font-weight: 700;
+    color: #4f4e4e;
+}
+.card-product-name:hover{
+    color: #009966;
+}
+
+.quantity-container{
+    display: flex;
+}
+
+.quantity-title{
+    color: #999999;
+    background-color: #EEEEEE;
+    width: fit-content;
+    padding: 0px 4px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.quantity-input input{
+    border-radius: 0px 5px 5px 0px;
+    border: 1.2px #999999 solid;
+    width: 30px;
+    text-align: center;
+    background-color: #ffffff;
+   
+}
+
+.add-button{
+    background-color: #FAF195;
+    padding: 2px 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
 /* CATEGORY CARDS SECTION */
 .category-cards-container{
     display: flex;
     /* background-color: antiquewhite; */
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .category-cards-item1,
