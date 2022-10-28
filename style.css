@@ -46,6 +46,57 @@ header {
   /* background-color: #009966; */
 }
 
+/* HEADER GRID */
+.grid-row0 {
+    display: grid;
+    grid-template-columns: 98% 2%;
+    /* background-color: #537368; */
+  }
+.grid-row1 {
+  display: grid;
+  grid-template-columns: 20% 65% 15%;
+}
+
+/* HEADER SEARCH BAR */
+.header-search-bar-input {
+  width: 70%;
+  outline: auto;
+  outline-color: #dedede;
+  margin: 0px;
+  margin-top: 13%;
+}
+
+.header-search-bar-button {
+  /* width: 10%; */
+  background-color: #85cc22;
+  border: 0.5px #85cc22 solid;
+  margin: 0px;
+}
+
+/* HEADER CART */
+.header-cart-grid-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 13px;
+  font-family: "figtree-regular";
+  font-size: 14px;
+  letter-spacing: normal;
+  background-color: #f2f2f2;
+  margin-top: 10%;
+}
+
+.grid-row2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+
+.header-offer-tag{
+    font-family: "figtree-regular";
+  font-size: 14px;
+  letter-spacing: normal;
+  padding-left: 10px;
+}
+
 body {
   /* margin-left: 5%;
     margin-right: 5%; */
@@ -64,16 +115,18 @@ a:hover {
   text-decoration: none;
 }
 
+hr {
+    background-color: #cec6c6;
+    border: 0.3px #dedede solid;
+  }
+
 .main-section {
   margin-left: 5%;
   margin-right: 5%;
   /* background-color: antiquewhite; */
 }
 
-hr {
-  background-color: #cec6c6;
-  border: 0.3px #dedede solid;
-}
+
 
 .section-title {
   text-align: center;
@@ -112,6 +165,26 @@ hr {
   /* display: inline-flex; */
   /* margin:auto; */
 }
+
+/* CATEGORY CARDS SECTION */
+.category-cards-container {
+    display: flex;
+    /* background-color: antiquewhite; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .category-cards-item1,
+  .category-cards-item2,
+  .category-cards-item3,
+  .category-cards-item4,
+  .category-cards-item5,
+  .category-cards-item6 {
+    /* flex-shrink: 400px; */
+    flex-basis: 10%;
+  }
+  
 
 /* MY SMART BASKET SECTION */
 .my-smart-basket-container {
@@ -245,23 +318,6 @@ select {
   border-radius: 5px;
 }
 
-/* CATEGORY CARDS SECTION */
-.category-cards-container {
-  display: flex;
-  /* background-color: antiquewhite; */
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.category-cards-item1,
-.category-cards-item2,
-.category-cards-item3,
-.category-cards-item4,
-.category-cards-item5,
-.category-cards-item6 {
-  /* flex-shrink: 400px; */
-  flex-basis: 10%;
-}
 
 /* DIWALI BANNER SECTION */
 
