@@ -39,6 +39,13 @@ header {
   color: #85cc22;
 }
 
+/* HEADER CONTAINER */
+.header-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: #009966; */
+}
+
 body {
   /* margin-left: 5%;
     margin-right: 5%; */
@@ -468,8 +475,8 @@ ul.social > li > a:hover {
   font-family: "Figtree-regular";
   font-size: 14px;
   color: #6cd138;
+  text-transform: capitalize;
 }
-
 
 .footer-description-grid-item {
   font-family: "Figtree-regular";
@@ -479,6 +486,17 @@ ul.social > li > a:hover {
   color: #009966;
 }
 
-.footer-description-grid-item i{
-    padding: 5px;
+.footer-description-grid-item i {
+  padding: 5px;
+}
+
+/* COPYRIGHT SECTION */
+.copyright {
+  background-color: #eaeaea;
+  padding: 10px;
+  padding-left: 150px;
+  /* margin-bottom: 0px; */
+  font-family: "Figtree-regular";
+  font-size: 14px;
+  color: #919191;
 }
