@@ -1,204 +1,249 @@
-
-@font-face { font-family: figtree-light; 
-    src: url('./Fonts/Figtree-Light.ttf'); 
-} 
-@font-face { font-family: figtree-regular; 
-    src: url('./Fonts/Figtree-Regular.ttf'); 
-} 
-@font-face { font-family: figtree-black; 
-    src: url('./Fonts/Figtree-Black.ttf'); 
-} 
-@font-face { font-family: figtree-bold; 
-    src: url('./Fonts/Figtree-Bold.ttf'); 
-} 
+@font-face {
+  font-family: figtree-light;
+  src: url("./Fonts/Figtree-Light.ttf");
+}
+@font-face {
+  font-family: figtree-regular;
+  src: url("./Fonts/Figtree-Regular.ttf");
+}
+@font-face {
+  font-family: figtree-black;
+  src: url("./Fonts/Figtree-Black.ttf");
+}
+@font-face {
+  font-family: figtree-bold;
+  src: url("./Fonts/Figtree-Bold.ttf");
+}
 
 /* HEADER SECTION */
-header{
-    /* background-color: #85c224; */
-    margin-top: 0px;
+header {
+  /* background-color: #85c224; */
+  margin-top: 0px;
 }
 
-.location-login-header-container{
-    display: flex;
-    justify-content: end;
-    /* background-color: antiquewhite; */
+.location-login-header-container {
+  display: flex;
+  justify-content: end;
+  /* background-color: antiquewhite; */
 }
 
-.location-login-header-detail{
-    font-family: 'figtree-light';
-    color: #666666;
-    font-weight: lighter;
-    font-size: 10px;
-    padding: 5px;
+.location-login-header-detail {
+  font-family: "figtree-light";
+  color: #666666;
+  font-weight: lighter;
+  font-size: 10px;
+  padding: 5px;
 }
 
-.location-login-header-detail:hover{
-    color: #85CC22;
+.location-login-header-detail:hover {
+  color: #85cc22;
 }
 
 body {
-    /* margin-left: 5%;
+  /* margin-left: 5%;
     margin-right: 5%; */
-    /* background-color: antiquewhite; */
+  /* background-color: antiquewhite; */
 }
 
-.main-section{
-    margin-left: 5%;
-    margin-right: 5%;
-    /* background-color: antiquewhite; */
-    
-} 
-
-
-.section-title{
-    text-align: center;
-    border-bottom: 1.2px #dedede solid;
-    font-family: 'figtree-light';
-    font-size: 24px;
-    letter-spacing: normal;
-    color: #444444e9;
-    /* margin-right: 100px; */
+a {
+  color: #3333339f;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.show-more{
-    background-color: #85c224;
-    display: inline-block;
-    color: azure;
-    padding: 4px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: 'figtree-regular';
-    /* margin-left: a; */
-    /* position: absolute;
+a:hover {
+  color: #85cc22;
+  /* background-color: transparent; */
+  text-decoration: none;
+}
+
+.main-section {
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: antiquewhite; */
+}
+
+hr {
+  background-color: #cec6c6;
+  border: 0.3px #dedede solid;
+}
+
+.section-title {
+  text-align: center;
+  border-bottom: 1.2px #dedede solid;
+  font-family: "figtree-light";
+  font-size: 24px;
+  letter-spacing: normal;
+  color: #444444e9;
+}
+
+.section-title-showmore {
+  text-align: center;
+  /* border-bottom: 1.2px #dedede solid; */
+  font-family: "figtree-light";
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: normal;
+  color: #444444e9;
+  /* font-size: x-large; */
+  margin-left: 45%;
+  margin-right: 30%;
+}
+
+.show-more {
+  background-color: #85c224;
+  display: inline-block;
+  color: azure;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "figtree-regular";
+  /* margin-left: a; */
+  /* position: absolute;
     top: 0; */
-    /* bottom: 0; */
-    /* display: inline-flex; */
-    /* margin:auto; */
-   
-
+  /* bottom: 0; */
+  /* display: inline-flex; */
+  /* margin:auto; */
 }
 
 /* MY SMART BASKET SECTION */
-.my-smart-basket-container{
-    display: flex;
-    justify-content: space-evenly;
+.my-smart-basket-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.my-smart-basket-card1{
-
+.my-smart-basket-card1,
+.my-smart-basket-card2,
+.my-smart-basket-card3,
+.my-smart-basket-card4,
+.my-smart-basket-card5,
+.my-smart-basket-card6 {
+  margin-left: 1%;
+  width: 550px;
 }
 
-.card{
-    /* background-color: #666666; */
-    border: 1px #6666666c solid;
-    padding: 15px;
-    margin: 2px;
-    
+.card {
+  /* background-color: #666666; */
+  /* border: 1px #66666629 solid; */
+  outline: auto;
+  outline-color: #f4f3f2;
+  padding: 15px;
+  margin: 2px;
 }
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card:hover {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
-.card-offer{
-    font-family: 'figtree-regular';
-    font-weight: 700;
-    color: #ba5253;
-    font-size: 10px;
-    text-align: end;
-    background-color: #ffffff95;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 0.2px;
-    padding-bottom: 0.1px;
-    /* padding: 2px 8px; */
-    /* border: 1px #6666666c solid; */
-    box-shadow: 1px 2px 26px -3px rgba(214,214,214,0.56);
-    
-
-}
-
-.mrp-title{
-    color: #666666;
-    font-size: 11px;
-    font-family: 'figtree-regular';
-    font-weight: 800;
+.card-offer {
+  font-family: "figtree-regular";
+  font-weight: 700;
+  color: #ba5253;
+  font-size: 10px;
+  text-align: end;
+  background-color: #ffffff95;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0.2px;
+  padding-bottom: 0.1px;
+  /* padding: 2px 8px; */
+  /* border: 1px #6666666c solid; */
+  box-shadow: 1px 2px 26px -3px rgba(214, 214, 214, 0.56);
+  outline: auto;
+  outline-color: #f4f3f2;
 }
 
-.mrp{
-    text-decoration: line-through;
-    color: #6E6E71;
-    font-size: 10px;
+select {
+  width: 100%;
 }
 
-.final-price{
-    color: #231F20;
-    font-size: 14px;
-    font-family: 'figtree-bold'; 
+.mrp-title {
+  color: #666666;
+  font-size: 11px;
+  font-family: "figtree-regular";
+  font-weight: 800;
 }
 
-.delivery-eta{
-    color: #333333;
-    font-size: 10px;
-    font-family: 'figtree-regular';
-    font-weight: 400;
+.mrp {
+  text-decoration: line-through;
+  color: #6e6e71;
+  font-size: 10px;
 }
 
-/* .card-footer tr{
-    color: #161513;
-} */
-
-.card-vendor-name{
-    color: #999999;
-    font-size: 11px;
-    font-family: 'figtree-regular';
+.final-price {
+  color: #231f20;
+  font-size: 14px;
+  font-family: "figtree-bold";
 }
 
-.card-product-name{
-    font-size: 14px;
-    margin-bottom: 30px;
-    font-family: 'figtree-regular';
-    font-weight: 700;
-    color: #4f4e4e;
-}
-.card-product-name:hover{
-    color: #009966;
+.delivery-eta {
+  color: #333333;
+  font-size: 10px;
+  font-family: "figtree-regular";
+  font-weight: 400;
 }
 
-.quantity-container{
-    display: flex;
+.delivery-eta-icon {
+  font-size: 15px;
+  display: inline-block;
+  color: #666666b7;
+  width: 24px;
 }
 
-.quantity-title{
-    color: #999999;
-    background-color: #EEEEEE;
-    width: fit-content;
-    padding: 0px 4px;
-    border-radius: 5px 0px 0px 5px;
+.card-footer {
+  background-color: #231f20;
 }
 
-.quantity-input input{
-    border-radius: 0px 5px 5px 0px;
-    border: 1.2px #999999 solid;
-    width: 30px;
-    text-align: center;
-    background-color: #ffffff;
-   
+.card-vendor-name {
+  color: #999999;
+  font-size: 11px;
+  font-family: "figtree-regular";
 }
 
-.add-button{
-    background-color: #FAF195;
-    padding: 2px 20px;
-    border: 0px;
-    border-radius: 5px;
+.card-product-name {
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-family: "figtree-regular";
+  font-weight: 700;
+  color: #4f4e4e;
+}
+.card-product-name:hover {
+  color: #009966;
 }
 
+.quantity-container {
+  display: flex;
+}
+
+.quantity-title {
+  color: #999999;
+  background-color: #eeeeee;
+  width: fit-content;
+  padding: 0px 4px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.quantity-input input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1.2px #999999 solid;
+  width: 30px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.add-button {
+  background-color: #f9dc79;
+  padding: 2px 20px;
+  border: 0px;
+  border-radius: 5px;
+}
 
 /* CATEGORY CARDS SECTION */
-.category-cards-container{
-    display: flex;
-    /* background-color: antiquewhite; */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+.category-cards-container {
+  display: flex;
+  /* background-color: antiquewhite; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .category-cards-item1,
@@ -206,92 +251,94 @@ body {
 .category-cards-item3,
 .category-cards-item4,
 .category-cards-item5,
-.category-cards-item6{
-    /* flex-shrink: 400px; */
-    flex-basis: 10%;
-    
+.category-cards-item6 {
+  /* flex-shrink: 400px; */
+  flex-basis: 10%;
 }
 
 /* DIWALI BANNER SECTION */
 
-.banner-container{
-    /* background-color: antiquewhite; */
-    /* margin-left: 3%;
+.banner-container {
+  /* background-color: antiquewhite; */
+  /* margin-left: 3%;
     margin-right: 3%; */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* BANK OFFERS SECTION */
 
 .bank-offers-container {
-    /* margin-left:20px;
+  /* margin-left:20px;
     margin-right: 50px; */
-    margin-left: 3%;
-    margin-right: 3%;
-    /* background-color: antiquewhite; */
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  margin-left: 3%;
+  margin-right: 3%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .bank-offer-1,
 .bank-offer-2,
 .bank-offer-3,
 .bank-offer-4 {
-    flex-basis: 10%;
-
+  flex-basis: 10%;
 }
 
 /* BEST SELLERS SECTION */
+.best-sellers-title,
+.my-smart-basket-title {
+  margin-top: 30px;
+}
 
 /* TOP OFFERS SECTION */
-.top-offers-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.top-offers-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .top-offers-item1,
 .top-offers-item2,
 .top-offers-item3,
-.top-offers-item4{
-    flex-basis: 10%;
+.top-offers-item4 {
+  flex-basis: 10%;
 }
 
 /* FRUITS AND VEGETABLES SECTION */
-.fruits-and-vegetables-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.fruits-and-vegetables-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* YOUR DAILY STAPLES SECTION */
-.your-daily-staples-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.your-daily-staples-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* BEVERAGES SECTION */
-.beverages-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* align-items: center; */
-    /* background-color: antiquewhite; */
+.beverages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* background-color: antiquewhite; */
 }
 
-.beverages-inner-container{
-    /* display: flex; */
-    /* flex: 50%; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
-    /* background-color: antiquewhite; */
-    /* flex-direction: row; */
+.beverages-inner-container {
+  /* display: flex; */
+  /* flex: 50%; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  /* background-color: antiquewhite; */
+  /* flex-direction: row; */
 }
 
 /* .beverages-item1{
@@ -307,36 +354,131 @@ body {
 } */
 
 /* SNACKS STORE SECTION */
-.snacks-store-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.snacks-store-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* CLEANING AND HOUSEHOLD SECTION */
-.cleaning-and-household-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.cleaning-and-household-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* BEAUTY AND HYGEINE SECTION */
-.beauty-and-hygeine-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.beauty-and-hygeine-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* HOME AND KITCHEN ESSENTIALS SECTION */
-.home-and-kitchen-essentials-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.home-and-kitchen-essentials-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* BRANDS STORE */
-.brand-store-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
+.brand-store-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+}
+
+/* FOOTER NAV LINKS */
+.footer-nav-links-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-nav-heading {
+  color: #85cc22;
+}
+
+.footer-nav-links-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Figtree-regular";
+  font-size: 14px;
+}
+.footer-nav-links-inner-container a {
+  margin-top: 10px;
+}
+
+/* FOOTER SOCIAL MEDIA ICONS */
+ul.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #222222;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+
+ul.social > li > a:hover {
+  text-decoration: none;
+  background-color: #85cc22;
+}
+
+/* .social-nav-link-icons i{
+    display: inline-block;
+    background-color: #3B5897;
+    border-radius: 100%;
+    width: 21px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .social-nav-link-icons:hover{
+    display: inline-block;
+    border-radius: 100%;
+    width: 21px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+        background-color: #f5f5f5;
+  } */
+
+/* FOOTER DESCRIPTION SECTION */
+.footer-description-grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.footer-description-side-heading {
+  font-family: "Figtree-regular";
+  font-size: 14px;
+  color: #6cd138;
+}
+
+
+.footer-description-grid-item {
+  font-family: "Figtree-regular";
+  font-size: 14px;
+}
+.footer-description-grid-item:hover {
+  color: #009966;
+}
+
+.footer-description-grid-item i{
+    padding: 5px;
 }
