@@ -48,10 +48,10 @@ header {
 
 /* HEADER GRID */
 .grid-row0 {
-    display: grid;
-    grid-template-columns: 98% 2%;
-    /* background-color: #537368; */
-  }
+  display: grid;
+  grid-template-columns: 98% 2%;
+  /* background-color: #537368; */
+}
 .grid-row1 {
   display: grid;
   grid-template-columns: 20% 65% 15%;
@@ -86,12 +86,12 @@ header {
 }
 
 .grid-row2 {
-    display: grid;
-    grid-template-columns: 20% 80%;
-  }
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
 
-.header-offer-tag{
-    font-family: "figtree-regular";
+.header-offer-tag {
+  font-family: "figtree-regular";
   font-size: 14px;
   letter-spacing: normal;
   padding-left: 10px;
@@ -116,17 +116,15 @@ a:hover {
 }
 
 hr {
-    background-color: #cec6c6;
-    border: 0.3px #dedede solid;
-  }
+  background-color: #cec6c6;
+  border: 0.3px #dedede solid;
+}
 
 .main-section {
   margin-left: 5%;
   margin-right: 5%;
   /* background-color: antiquewhite; */
 }
-
-
 
 .section-title {
   text-align: center;
@@ -168,23 +166,22 @@ hr {
 
 /* CATEGORY CARDS SECTION */
 .category-cards-container {
-    display: flex;
-    /* background-color: antiquewhite; */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 20px;
-  }
-  
-  .category-cards-item1,
-  .category-cards-item2,
-  .category-cards-item3,
-  .category-cards-item4,
-  .category-cards-item5,
-  .category-cards-item6 {
-    /* flex-shrink: 400px; */
-    flex-basis: 10%;
-  }
-  
+  display: flex;
+  /* background-color: antiquewhite; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.category-cards-item1,
+.category-cards-item2,
+.category-cards-item3,
+.category-cards-item4,
+.category-cards-item5,
+.category-cards-item6 {
+  /* flex-shrink: 400px; */
+  flex-basis: 10%;
+}
 
 /* MY SMART BASKET SECTION */
 .my-smart-basket-container {
@@ -318,7 +315,6 @@ select {
   border-radius: 5px;
 }
 
-
 /* DIWALI BANNER SECTION */
 
 .banner-container {
@@ -356,6 +352,12 @@ select {
 .best-sellers-title,
 .my-smart-basket-title {
   margin-top: 30px;
+}
+
+.best-seller-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
 }
 
 /* TOP OFFERS SECTION */
