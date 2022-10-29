@@ -322,6 +322,9 @@ select {
   padding: 2px 20px;
   border: 0px;
   border-radius: 5px;
+  /* width: 40px; */
+  font-family: "figtree-regular";
+  font-size: 10px;
 }
 
 /* DIWALI BANNER SECTION */
