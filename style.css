@@ -390,42 +390,39 @@ select {
 
 /* BEVERAGES SECTION */
 
-.beverages-grid-row{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.beverages-grid-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-.beverages-item1 img{
-    width: 100%;
+.beverages-item1 img {
+  width: 100%;
 }
 
-.beverages-grid-col2{
-    display: flex;
-    /* background-color: #009966; */
-    flex-wrap: wrap;
+.beverages-grid-col2 {
+  display: flex;
+  /* background-color: #009966; */
+  flex-wrap: wrap;
 }
 
 .beverages-item2,
 .beverages-item3,
 .beverages-item4,
 .beverages-item5 {
-    width: 50%;
+  width: 50%;
 }
 
 .beverages-item2 img,
 .beverages-item3 img,
 .beverages-item4 img,
 .beverages-item5 img {
-    width: auto;
+  width: auto;
 }
-
 
 /* .beverages-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 } */
-
-
 
 /* .beverages-inner-container {
   display: flex; 
@@ -463,11 +460,39 @@ select {
 }
 
 /* BEAUTY AND HYGEINE SECTION */
-.beauty-and-hygeine-container {
+.beauty-and-hygeine-grid-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.beauty-and-hygeine-item1 img {
+  width: 100%;
+}
+
+.beauty-and-hygeine-grid-col2 {
+  display: flex;
+  /* background-color: #009966; */
+  flex-wrap: wrap;
+}
+
+.beauty-and-hygeine-item2,
+.beauty-and-hygeine-item3,
+.beauty-and-hygeine-item4,
+.beauty-and-hygeine-item5 {
+  width: 50%;
+}
+
+.beauty-and-hygeine-item2 img,
+.beauty-and-hygeine-item3 img,
+.beauty-and-hygeine-item4 img,
+.beauty-and-hygeine-item5 img {
+  width: auto;
+}
+
+/* .beauty-and-hygeine-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
+} */
 
 /* HOME AND KITCHEN ESSENTIALS SECTION */
 .home-and-kitchen-essentials-container {
