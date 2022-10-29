@@ -60,6 +60,7 @@ header {
 /* HEADER SEARCH BAR */
 .header-search-bar-input {
   width: 70%;
+  height: 25px;
   outline: auto;
   outline-color: #dedede;
   margin: 0px;
@@ -71,6 +72,7 @@ header {
   background-color: #85cc22;
   border: 0.5px #85cc22 solid;
   margin: 0px;
+  height: 30px;
 }
 
 /* HEADER CART */
@@ -90,9 +92,16 @@ header {
   grid-template-columns: 20% 80%;
 }
 
+.header-category-dropdown-input {
+  color: #ffffff;
+  background-color: #85cc22;
+  height: 30px;
+  border: none;
+}
+
 .header-offer-tag {
   font-family: "figtree-regular";
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: normal;
   padding-left: 10px;
 }
