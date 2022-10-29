@@ -389,22 +389,52 @@ select {
 }
 
 /* BEVERAGES SECTION */
-.beverages-container {
+
+.beverages-grid-row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.beverages-item1 img{
+    width: 100%;
+}
+
+.beverages-grid-col2{
+    display: flex;
+    /* background-color: #009966; */
+    flex-wrap: wrap;
+}
+
+.beverages-item2,
+.beverages-item3,
+.beverages-item4,
+.beverages-item5 {
+    width: 50%;
+}
+
+.beverages-item2 img,
+.beverages-item3 img,
+.beverages-item4 img,
+.beverages-item5 img {
+    width: auto;
+}
+
+
+/* .beverages-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* align-items: center; */
-  /* background-color: antiquewhite; */
-}
+} */
 
-.beverages-inner-container {
-  /* display: flex; */
-  /* flex: 50%; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
-  /* background-color: antiquewhite; */
-  /* flex-direction: row; */
-}
+
+
+/* .beverages-inner-container {
+  display: flex; 
+  flex: 50%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: antiquewhite;
+   flex-direction: row;
+} */
 
 /* .beverages-item1{
     flex: 3;
