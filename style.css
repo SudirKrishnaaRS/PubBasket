@@ -646,3 +646,51 @@ ul.social > li > a:hover {
   font-size: 14px;
   color: #919191;
 }
+
+
+/* CAROUSEL STYLING STARTS HERE */
+.carousel {
+    position: relative;
+  }
+  
+  .carousel__item {
+    width: "1280px";
+    height: "460px";
+    /* background: grey; */
+    /* padding: 1em; */
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+  }
+  
+  .carousel__item--selected {
+    display: block;
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: red; */
+    text-align: center;
+  }
+  
+  .carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(68, 67, 67, 0.881);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel__button--selected {
+    background: #c0f970;
+  }
+  
+  /* ***CAROUSEL STYLING ENDS HERE*** */
