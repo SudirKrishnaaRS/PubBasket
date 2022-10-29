@@ -530,7 +530,8 @@ select {
   font-family: "figtree-regular";
 }
 
-.bigbasket-detailed-description-container p {
+.bigbasket-detailed-description-container p,
+.bigbasket-detailed-description-container li {
   color: #333333;
   font-family: "figtree-regular";
 }
