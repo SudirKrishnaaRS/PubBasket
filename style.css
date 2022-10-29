@@ -518,26 +518,26 @@ select {
 }
 
 /* BIGBASKET DETAILED  DESCRIPTION */
-.bigbasket-detailed-description-container{
-    outline:auto;
-    outline-color: #333333;
-    padding: 19px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.bigbasket-detailed-description-container {
+  outline: auto;
+  outline-color: #333333;
+  padding: 19px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .bigbasket-detailed-description-container h2,
-.bigbasket-detailed-description-container h3{
-    font-family: 'figtree-regular';
+.bigbasket-detailed-description-container h3 {
+  font-family: "figtree-regular";
 }
 
-.bigbasket-detailed-description-container p{
-    color: #333333;
-    font-family: 'figtree-regular';
+.bigbasket-detailed-description-container p {
+  color: #333333;
+  font-family: "figtree-regular";
 }
 
-.bigbasket-detailed-description-container span{
-    color: #85cc22;
-    font-family: 'figtree-regular';
+.bigbasket-detailed-description-container span {
+  color: #85cc22;
+  font-family: "figtree-regular";
 }
 
 /* FOOTER NAV LINKS */
